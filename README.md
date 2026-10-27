@@ -1,6 +1,6 @@
 # WattWise
 
-### Household appliance energy prediction, with an honest test of temporal generalization
+### Regression-based Household Appliances Energy Consumption Prediction, with a test on Temporal Generalization
 
 Author: Swayam Shakya · Python · Jupyter 
 
