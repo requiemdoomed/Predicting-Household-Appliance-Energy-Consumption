@@ -2,7 +2,7 @@
 
 ### Household appliance energy prediction, with an honest test of temporal generalization
 
-Author: Swayam Shakya** · Python · Jupyter 
+Author: Swayam Shakya · Python · Jupyter 
 
 ![Observed energy through time](results/figures/timeline.png)
 
