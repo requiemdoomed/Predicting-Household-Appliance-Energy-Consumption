@@ -1,0 +1,18 @@
+{
+  "best_parameters": {
+    "ridge__alpha": 10.0
+  },
+  "CV_RMSE_Wh": 66.62813800573781,
+  "training_rows": 15644,
+  "features": [
+    "hour_sin",
+    "hour_cos",
+    "week_sin",
+    "week_cos",
+    "weekend",
+    "lag_1",
+    "lag_6",
+    "lag_144",
+    "past_hour_mean"
+  ]
+}

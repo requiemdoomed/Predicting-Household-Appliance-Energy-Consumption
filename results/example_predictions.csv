@@ -1,0 +1,4 @@
+date,prediction_raw_Wh,prediction_nonnegative_Wh,outside_training_range,model
+2016-05-27 17:40:00,135.83725523844433,135.83725523844433,True,Ridge calendar (v1 reference)
+2016-05-27 17:50:00,132.44633105333992,132.44633105333992,True,Ridge calendar (v1 reference)
+2016-05-27 18:00:00,129.34322198261967,129.34322198261967,True,Ridge calendar (v1 reference)

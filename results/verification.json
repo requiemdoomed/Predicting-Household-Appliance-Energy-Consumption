@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-27",
+  "version": "2.0.0",
+  "automated_tests": {
+    "passed": 49,
+    "failed": 0,
+    "evidence": [
+      "results/test_run.log",
+      "results/test_results.xml"
+    ]
+  },
+  "notebook": {
+    "code_cells_executed": 13,
+    "error_outputs": 0,
+    "mode": "fresh-process IPython (no kernel sockets)",
+    "schema_validated": true
+  },
+  "audit": {
+    "regression_cases_failed_before_fix": 3,
+    "same_cases_passed_after_fix": 3,
+    "details": "CHANGELOG.md"
+  },
+  "training": {
+    "environment_configurations": 13,
+    "forecast_configurations": 17,
+    "nested_outer_folds": 3,
+    "nested_inner_folds": 3,
+    "final_cv_folds": 4,
+    "dataset": "Real UCI Appliances Energy Prediction measurements",
+    "rerun": "Expanded searches repeated during full notebook execution"
+  },
+  "pdf_review": {
+    "paper_pages": 8,
+    "technical_report_pages": 11,
+    "all_pages_rendered_and_visually_reviewed": true
+  },
+  "holdout_status": "Previously inspected in v1. Version 2 final-period comparisons are retrospective.",
+  "not_verified": [
+    "Native Jupyter kernel startup: host rejects kernel socket setup",
+    "Windows/macOS execution",
+    "GitHub Actions before upload",
+    "External household generalization"
+  ]
+}

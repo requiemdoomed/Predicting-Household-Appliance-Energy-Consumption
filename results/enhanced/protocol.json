@@ -1,0 +1,123 @@
+{
+  "version": "2.0.0",
+  "seed": 42,
+  "criterion": "mean expanding-fold RMSE",
+  "development_rows": 15788,
+  "holdout_status": "Previously inspected in v1; v2 comparisons are exploratory, not a new untouched test.",
+  "inner_folds_final": 4,
+  "outer_folds": 3,
+  "inner_folds_nested": 3,
+  "gap_rows": 144,
+  "searches": {
+    "environment": {
+      "Mean baseline": {
+        "estimator": "DummyRegressor()",
+        "grid": {},
+        "configurations": 1
+      },
+      "Median baseline": {
+        "estimator": "DummyRegressor(strategy='median')",
+        "grid": {},
+        "configurations": 1
+      },
+      "MLR calendar": {
+        "estimator": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('linearregression', LinearRegression())])",
+        "grid": {},
+        "configurations": 1
+      },
+      "Ridge expanded": {
+        "estimator": "Pipeline(steps=[('standardscaler', StandardScaler()), ('ridge', Ridge())])",
+        "grid": {
+          "ridge__alpha": [
+            100.0,
+            1000.0,
+            10000.0,
+            100000.0
+          ]
+        },
+        "configurations": 4
+      },
+      "Additive splines": {
+        "estimator": "Pipeline(steps=[('splinetransformer', SplineTransformer(include_bias=False)),\n                ('standardscaler', StandardScaler()), ('ridge', Ridge())])",
+        "grid": {
+          "splinetransformer__n_knots": [
+            3,
+            5
+          ],
+          "ridge__alpha": [
+            100.0,
+            1000.0
+          ]
+        },
+        "configurations": 4
+      },
+      "Extra trees": {
+        "estimator": "ExtraTreesRegressor(max_features=0.8, n_jobs=1, random_state=42)",
+        "grid": {
+          "min_samples_leaf": [
+            20,
+            60
+          ]
+        },
+        "configurations": 2
+      }
+    },
+    "forecast": {
+      "Mean baseline": {
+        "estimator": "DummyRegressor()",
+        "grid": {},
+        "configurations": 1
+      },
+      "Median baseline": {
+        "estimator": "DummyRegressor(strategy='median')",
+        "grid": {},
+        "configurations": 1
+      },
+      "Persistence": {
+        "estimator": "PersistenceRegressor()",
+        "grid": {},
+        "configurations": 1
+      },
+      "History ridge": {
+        "estimator": "Pipeline(steps=[('standardscaler', StandardScaler()), ('ridge', Ridge())])",
+        "grid": {
+          "ridge__alpha": [
+            0.1,
+            10.0,
+            1000.0,
+            10000.0
+          ]
+        },
+        "configurations": 4
+      },
+      "History boosting": {
+        "estimator": "HistGradientBoostingRegressor(early_stopping=False, learning_rate=0.05,\n                              max_iter=200, random_state=42)",
+        "grid": {
+          "max_leaf_nodes": [
+            7,
+            15
+          ],
+          "l2_regularization": [
+            10.0,
+            100.0
+          ],
+          "loss": [
+            "squared_error",
+            "poisson"
+          ]
+        },
+        "configurations": 8
+      },
+      "History extra trees": {
+        "estimator": "ExtraTreesRegressor(max_features=0.8, n_jobs=1, random_state=42)",
+        "grid": {
+          "min_samples_leaf": [
+            5,
+            20
+          ]
+        },
+        "configurations": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "MLR_residual_lag1_correlation": 0.6912437775232103,
+  "training_peak_threshold_Wh": 210.0,
+  "MLR_peak_MAE_Wh": 225.72700807692556,
+  "MLR_nonpeak_MAE_Wh": 30.890193496279306,
+  "test_peak_count": 325,
+  "condition_number_scaled_design": 62.825662499035396,
+  "MLR_calendar_minus_mean_RMSE_CI_95_Wh": [
+    -8.666462569303132,
+    -1.7417330161178532
+  ],
+  "bootstrap_block_rows": 144,
+  "bootstrap_repeats": 1000
+}

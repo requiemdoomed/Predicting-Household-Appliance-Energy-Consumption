@@ -1,0 +1,7 @@
+{
+  "model": "Extra trees",
+  "CV_RMSE_Wh": 92.25228645520355,
+  "parameters": {
+    "min_samples_leaf": 60
+  }
+}

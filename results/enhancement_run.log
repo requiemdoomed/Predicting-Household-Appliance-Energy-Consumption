@@ -1,0 +1,26 @@
+environment: final CV selected Extra trees, RMSE=92.252
+environment nested fold 1: Ridge expanded, RMSE=96.510
+environment nested fold 2: Extra trees, RMSE=89.897
+environment nested fold 3: Extra trees, RMSE=92.643
+forecast: final CV selected History extra trees, RMSE=63.007
+forecast nested fold 1: History extra trees, RMSE=66.618
+forecast nested fold 2: History extra trees, RMSE=61.331
+forecast nested fold 3: History extra trees, RMSE=60.925
+
+environment retrospective holdout:
+           model  CV_RMSE_Wh    MAE_Wh   RMSE_Wh        R2  negative_predictions  selected_by_CV                                                parameters
+   Mean baseline   99.889589 52.684938 91.053435 -0.000327                     0           False                                                        {}
+ Median baseline  107.852611 43.278439 98.037236 -0.159663                     0           False                                                        {}
+    MLR calendar  100.597973 46.933255 85.685781  0.114136                    48           False                                                        {}
+  Ridge expanded   93.601293 47.221801 84.707629  0.134246                     3           False                                  {"ridge__alpha": 1000.0}
+Additive splines   97.425743 64.644062 91.612539 -0.012650                     0           False {"ridge__alpha": 1000.0, "splinetransformer__n_knots": 3}
+     Extra trees   92.252286 61.364934 91.186677 -0.003257                     0            True                                  {"min_samples_leaf": 60}
+
+forecast retrospective holdout:
+              model  CV_RMSE_Wh    MAE_Wh   RMSE_Wh        R2  negative_predictions  selected_by_CV                                                                 parameters
+      Mean baseline   99.972742 52.658610 91.052441 -0.000306                     0           False                                                                         {}
+    Median baseline  107.911665 43.278439 98.037236 -0.159663                     0           False                                                                         {}
+        Persistence   72.063391 26.650621 66.437640  0.467429                     0           False                                                                         {}
+      History ridge   65.591232 27.659213 59.694680  0.570047                     0           False                                                   {"ridge__alpha": 1000.0}
+   History boosting   63.580122 25.306678 58.001008  0.594099                     0           False {"l2_regularization": 100.0, "loss": "squared_error", "max_leaf_nodes": 7}
+History extra trees   63.007486 25.505634 57.229726  0.604822                     0            True                                                    {"min_samples_leaf": 5}

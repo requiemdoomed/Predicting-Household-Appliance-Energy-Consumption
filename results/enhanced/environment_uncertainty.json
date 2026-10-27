@@ -1,0 +1,21 @@
+{
+  "comparison": "Extra trees minus Mean baseline",
+  "interpretation": "Exploratory paired RMSE difference, conditional on fitted models; not selection-adjusted",
+  "intervals_95_percent": [
+    {
+      "block_rows": 36,
+      "low_Wh": -6.608764728374679,
+      "high_Wh": 8.34170551024278
+    },
+    {
+      "block_rows": 144,
+      "low_Wh": -7.874301675422819,
+      "high_Wh": 9.146689194373183
+    },
+    {
+      "block_rows": 288,
+      "low_Wh": -8.713607956976864,
+      "high_Wh": 10.412207664895046
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "model": "History extra trees",
+  "CV_RMSE_Wh": 63.007485717307596,
+  "parameters": {
+    "min_samples_leaf": 5
+  }
+}

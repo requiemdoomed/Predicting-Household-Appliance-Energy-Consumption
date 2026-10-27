@@ -1,0 +1,21 @@
+{
+  "seed": 42,
+  "data_sha256": "2820bf712ad0275cb18b85a05250926100d8e65ebb9f4d2d016ca91ea152a25d",
+  "frame_sha256": "a03b63062d81c3e2281e5ad343910dafdda8a8004821906dd47cd9dec02af0d3",
+  "rows": 19735,
+  "training_rows": 15788,
+  "test_rows": 3947,
+  "train_start": "2016-01-11 17:00:00",
+  "train_end": "2016-04-30 08:10:00",
+  "test_start": "2016-04-30 08:20:00",
+  "test_end": "2016-05-27 18:00:00",
+  "selected_by_cv": "Ridge calendar",
+  "cv_splits": 4,
+  "cv_gap_rows": 144,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0"
+  }
+}

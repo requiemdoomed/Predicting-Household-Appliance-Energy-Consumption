@@ -1,0 +1,21 @@
+{
+  "comparison": "History extra trees minus Persistence",
+  "interpretation": "Exploratory paired RMSE difference, conditional on fitted models; not selection-adjusted",
+  "intervals_95_percent": [
+    {
+      "block_rows": 36,
+      "low_Wh": -11.60093289322637,
+      "high_Wh": -6.800245394914982
+    },
+    {
+      "block_rows": 144,
+      "low_Wh": -11.348777435470426,
+      "high_Wh": -6.882545774392813
+    },
+    {
+      "block_rows": 288,
+      "low_Wh": -11.235684722897599,
+      "high_Wh": -7.191814013041307
+    }
+  ]
+}
